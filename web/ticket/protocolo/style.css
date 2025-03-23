@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0F0F0F;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.logo {
+    width: 358px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.check-icon {
+    width: 29px;
+    height: 29px;
+}
+
+.welcome-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    margin: 0 auto;
+    text-align: center;
+
+    width: 318px;
+    height: 52px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.80);
+    color: #171717;
+    font-family: "Martian Mono", monospace;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+
+.intro-text {
+    width: 942px;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 461.772px;
+    height: 74px;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1.5px solid rgba(255, 255, 255, 0.80);
+    background: #0F0F0F;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    text-align: center;
+}
+
+.search-button {
+    display: flex;
+    height: 74px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    border: 1.5px solid rgba(255, 255, 255, 0.80);
+    background: rgba(255, 255, 255, 0.80);
+    color: #171717;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.notification {
+    position: fixed;
+    top: 15px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 114px;
+    border-radius: 4px;
+    background: rgba(3, 3, 3, 0.30);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.progress-bar {
+    width: 80%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: width 8s linear;
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-icon {
+    display: inline-flex;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #FF0042;
+}
+
+.notification-icon svg {
+    width: 15px;
+    height: 15px;
+    stroke-width: 1.6px;
+    stroke: #FFF;
+}
+
+.notification-title, .notification-description {
+    font-family: 'Sora', sans-serif;
+}
+
+.notification-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.notification-description {
+    max-width: 250px;
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.light-ball {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 300px;
+    background: rgba(255, 255, 255, 0.20);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+    filter: blur(200px);
+    position: absolute;
+    z-index: 0;
+}
+
+.light-ball.top {
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.light-ball.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
