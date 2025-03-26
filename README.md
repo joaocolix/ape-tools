@@ -1,60 +1,61 @@
-# Ferramentas Auxiliares – Ape Studio
+# Auxiliary Tools – Ape Studio
 
-Este repositório contém uma coleção de ferramentas de apoio utilizadas por Ape Stuido, voltadas para facilitar sistemas, suporte e fluxo de autenticação. Abaixo está a descrição de cada uma das páginas disponíveis.
+This repository contains a collection of support tools used by Ape Studio, designed to facilitate systems, support, and authentication flow. Below is the description of each available page.
 
 ---
 
-## 📋 Colar Texto
+## 📋 Paste Text
 
 **URL:** `https://apestudio.dev/colar`
 
-Ferramenta simples para colar e compartilhar trechos de texto temporariamente. Muito útil para debug, logs ou compartilhamento de textos.
+Simple tool to paste and share text snippets temporarily. Very useful for debugging, logs, or sharing text.
 
-### Funcionalidades:
-- Colar qualquer texto;
-- Gerar um link único para acesso posterior;
-- Suporte a texto bruto ou formatado (JSON, XML, etc.).
+### Features:
+- Paste any text;
+- Generate a unique link for later access;
+- Support for plain or formatted text (JSON, XML, etc.).
 
 ---
 
-## ✅ Página de Confirmação de Autenticação
+## ✅ Authentication Success Page
 
 **URL:** `https://apestudio.dev/auth/sucess`
 
-Página de confirmação de OAtuh2 Discord.
+Page for OAuth2 Discord authentication success.
 
-### Funcionalidades:
-- Exibe mensagem de sucesso caso validado;
-- Possui conexão direta ao Bot OAuth2.
+### Features:
+- Displays a success message if validated;
+- Direct connection to the OAuth2 Bot.
 
 ---
 
-## 🚫 Página de Erros de Autenticação
+## 🚫 Authentication Error Page
 
 **URL:** `https://apestudio.dev/auth/error`
 
-Página de erro de OAtuh2 Discord.
+Page for OAuth2 Discord authentication errors.
 
-### Funcionalidades:
-- Exibe mensagens de erro com base nas query strings recebidas;
-- Possui conexão direta ao Bot OAuth2.
+### Features:
+- Displays error messages based on the received query strings;
+- Direct connection to the OAuth2 Bot.
 
 ---
 
-## 🔍 Busca de Protocolos
+## 🔍 Protocol Search
 
 **URL:** `https://apestudio.dev/protocolos`
 
-Ferramenta de busca de protocolos internos para facilitar a consulta de tickets.
+Internal protocol search tool to facilitate ticket query.
 
-### Funcionalidades:
-- Busca de transcripts de tickets;
-- Resultados com redirecionamento direto ao transcript;
-- Possui conexão direta ao Bot Ticket.
+### Features:
+- Search for ticket transcripts;
+- Results with direct redirection to the transcript;
+- Direct connection to the Ticket Bot.
 
 ---
 
-## 🛠️ Stack Técnica
-- Linguagem: JavaScrit
-- Estilo: CSS
-- Hospedagem: SquareCloud
+## 🛠️ Technical Stack
+- Language: JavaScript
+- Style: CSS
+- Hosting: SquareCloud
+- Status: Still under development, not functional.
