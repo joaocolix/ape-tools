@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0F0F0F;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.logo-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+    transform: scale(1); 
+}
+
+.logo {
+    width: 358px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center; 
+}
+
+.welcome-box,
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    font-weight: 700;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-box {
+    width: 338px;
+    height: 52px;
+    padding: 10px;
+    background: rgba(255, 0, 66, 0.15);
+    color: rgba(255, 0, 66, 1);
+    font-family: "Martian Mono", monospace;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    width: 942px;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 416px;
+    height: 74px;
+    padding: 10px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.30);
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    margin-top: 10px; 
+}
+
+.btn:hover {
+    color: #171717;
+    background: rgba(255, 255, 255, 1);
+}
+
+.light-ball {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 300px;
+    background: rgba(255, 255, 255, 0.20);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+    filter: blur(200px);
+    position: absolute;
+    z-index: 0;
+}
+
+.light-ball.top {
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.light-ball.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
