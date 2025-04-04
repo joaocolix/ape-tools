@@ -55,13 +55,31 @@ Internal protocol search tool to facilitate ticket query.
 ---
 
 ## 🛠️ Technical Stack
-- Language: JavaScript
-- Style: CSS
-- Hosting: SquareCloud
-- Status: Semi-functional, but currently offline
 
-To run the project locally:
-- Make the necessary changes to the URLs (adjust environment/config as needed);
-- Make sure you have Node.js installed;
-- Use npm install to install dependencies;
-- Run npm start to launch the application locally.
+- **Language:** JavaScript  
+- **Style:** CSS  
+- **Hosting:** SquareCloud  
+- **Status:** 🟡 *Semi-functional*, but currently **offline**
+
+---
+
+## 🎨 Design
+
+The interface design for these tools was created by me using [Figma](https://figma.com).  
+It reflects Ape Studio’s current visual identity and focuses on clarity, usability, and consistency.
+
+---
+
+## 🧪 Running Locally
+
+To run this project locally:
+
+1. Clone the repository;
+2. Make the necessary changes to environment/config files (especially URLs if needed);
+3. Make sure you have [Node.js](https://nodejs.org/) installed;
+4. Run the following commands:
+
+```bash
+npm install
+npm start
+
