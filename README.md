@@ -60,6 +60,7 @@ Internal protocol search tool to facilitate ticket query.
 - **Style:** CSS  
 - **Hosting:** SquareCloud  
 - **Status:** 🟡 *Semi-functional*, but currently **offline**
+- **Development:** 100% developed by me, from interface design to implementation
 
 ---
 
