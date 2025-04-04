@@ -10,7 +10,7 @@ This is my **first full project**, 100% designed and developed by me — from Fi
 
 Want to understand how it works, see features, or run it locally?
 
-👉 **Full documentation available at GitBook:**  
+**Full documentation available at GitBook:**  
 [Docs](https://joaos-organization-55.gitbook.io/ape-tools)
 
 ---
@@ -27,5 +27,5 @@ Want to understand how it works, see features, or run it locally?
 
 ## Status
 
-🟡 Semi-functional – not deployed yet  
+Semi-functional – not deployed yet  
 You can run it locally using `npm install` + `npm start` (see docs for full guide)
