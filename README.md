@@ -58,4 +58,10 @@ Internal protocol search tool to facilitate ticket query.
 - Language: JavaScript
 - Style: CSS
 - Hosting: SquareCloud
-- Status: Still under development, not functional.
+- Status: Semi-functional, but currently offline
+
+To run the project locally:
+- Make the necessary changes to the URLs (adjust environment/config as needed);
+- Make sure you have Node.js installed;
+- Use npm install to install dependencies;
+- Run npm start to launch the application locally.
