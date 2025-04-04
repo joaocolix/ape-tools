@@ -64,6 +64,12 @@ body {
     background: rgba(255, 255, 255, 1);
 }
 
+.btn.clicked {
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s;
+}
+
 .clientes-container {
     width: 80vw;
     max-width: 1150px;
@@ -148,6 +154,87 @@ body {
     transform: translate(50%, 50%);
 }
 
+.notification {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 114px;
+    border-radius: 4px;
+    background: rgba(3, 3, 3, 0.96);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+
+.progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.progress-bar {
+    width: 80%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: width 8s linear;
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-icon {
+    display: inline-flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #28a745;
+}
+
+.notification-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #FFF;
+    stroke-width: 1.6px;
+}
+
+.notification-title, .notification-description {
+    font-family: 'Sora', sans-serif;
+}
+
+.notification-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.notification-description {
+    max-width: 250px;
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: justify;
+    margin-top: 8px;
+}
 
 @media screen and (max-width: 1024px) {
     .logo {

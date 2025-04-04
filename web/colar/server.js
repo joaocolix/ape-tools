@@ -34,9 +34,11 @@ app.post("/save", async (req, res) => {
         }
 
         const id = Date.now().toString();
+        const now = Date.now();
         data[id] = {
             text,
-            title: title || "Inserir Título_", // Se não tiver título, define um padrão
+            title: title || "Inserir Título_", 
+            createdAt: now
         };
 
         await fs.promises.writeFile(databasePath, JSON.stringify(data, null, 2));
@@ -109,3 +111,37 @@ app.get("/text/:id", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`[CARREGADO] Servidor Colar`);
 });
+
+const CLEANUP_INTERVAL = 24 * 60 * 60 * 1000;
+const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000;
+
+function cleanupOldEntries() {
+    if (!fs.existsSync(databasePath)) return;
+
+    fs.promises.readFile(databasePath, "utf8")
+        .then(data => {
+            let jsonData = JSON.parse(data);
+            const now = Date.now();
+
+            let modified = false;
+
+            for (const id in jsonData) {
+                const entry = jsonData[id];
+                if (entry.createdAt && (now - entry.createdAt) > THIRTY_DAYS) {
+                    delete jsonData[id];
+                    modified = true;
+                }
+            }
+
+            if (modified) {
+                return fs.promises.writeFile(databasePath, JSON.stringify(jsonData, null, 2));
+            }
+        })
+        .catch(error => {
+            console.error("Erro ao limpar entradas antigas:", error);
+        });
+}
+
+cleanupOldEntries();
+
+setInterval(cleanupOldEntries, CLEANUP_INTERVAL);
