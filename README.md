@@ -1,86 +1,31 @@
-# Auxiliary Tools – Ape Studio
+# Ape Studio – Auxiliary Tools
 
-This repository contains a collection of support tools used by Ape Studio, designed to facilitate systems, support, and authentication flow. Below is the description of each available page.
+A small internal platform built to support tasks at Ape Studio
 
----
-
-## 📋 Paste Text
-
-**URL:** `https://apestudio.dev/colar`
-
-Simple tool to paste and share text snippets temporarily. Very useful for debugging, logs, or sharing text.
-
-### Features:
-- Paste any text;
-- Generate a unique link for later access;
-- Support for plain or formatted text (JSON, XML, etc.).
+This is my **first full project**, 100% designed and developed by me — from Figma to final code.
 
 ---
 
-## ✅ Authentication Success Page
+## Documentation
 
-**URL:** `https://apestudio.dev/auth/sucess`
+Want to understand how it works, see features, or run it locally?
 
-Page for OAuth2 Discord authentication success.
-
-### Features:
-- Displays a success message if validated;
-- Direct connection to the OAuth2 Bot.
+👉 **Full documentation available at GitBook:**  
+[Docs](https://joaos-organization-55.gitbook.io/ape-tools)
 
 ---
 
-## 🚫 Authentication Error Page
+## Tech Stack
 
-**URL:** `https://apestudio.dev/auth/error`
-
-Page for OAuth2 Discord authentication errors.
-
-### Features:
-- Displays error messages based on the received query strings;
-- Direct connection to the OAuth2 Bot.
+- JavaScript  
+- CSS  
+- Node.js  
+- SquareCloud (Hosting)  
+- Figma (UI Design)  
 
 ---
 
-## 🔍 Protocol Search
+## Status
 
-**URL:** `https://apestudio.dev/protocolos`
-
-Internal protocol search tool to facilitate ticket query.
-
-### Features:
-- Search for ticket transcripts;
-- Results with direct redirection to the transcript;
-- Direct connection to the Ticket Bot.
-
----
-
-## 🛠️ Technical Stack
-
-- **Language:** JavaScript  
-- **Style:** CSS  
-- **Hosting:** SquareCloud  
-- **Status:** 🟡 *Semi-functional*, but currently **offline**
-- **Development:** 100% developed by me, from interface design to implementation
-
----
-
-## 🎨 Design
-
-The interface design for these tools was created by me using [Figma](https://figma.com).  
-It reflects Ape Studio’s current visual identity and focuses on clarity, usability, and consistency.
-
----
-
-## 🧪 Running Locally
-
-To run this project locally:
-
-1. Clone the repository;
-2. Make the necessary changes to environment/config files (especially URLs if needed);
-3. Make sure you have [Node.js](https://nodejs.org/) installed;
-4. Run the following commands:
-
-```bash
-npm install
-npm start
-
+🟡 Semi-functional – not deployed yet  
+You can run it locally using `npm install` + `npm start` (see docs for full guide)
