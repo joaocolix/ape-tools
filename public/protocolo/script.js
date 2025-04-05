@@ -5,7 +5,7 @@ function searchTicket() {
     var errorSound = document.getElementById("errorSound");
 
     if (protocol) {
-        window.location.href = `https://api.apestudio.dev/ticket/${protocol}.html`;
+        window.location.href = `${HOST_URL}/ticket/${protocol}.html`;
     } else {
         notification.style.display = "flex";
         notification.style.opacity = "1";
